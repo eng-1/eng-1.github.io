@@ -5,7 +5,7 @@ categories: [Programming, Reverse, Engineering]
 tags: [IDA, IDC, pthread_create, breakpoint]
 ---
 
- Sometimes, in order to throw off your efforts, programs will create a whole boatload of threads at a very high rate. Faced with random context switches and a generally unstable debugging environment as a result, it is always helpful to create a list of where all threads are initialized, and statically analyse them one at a time rather than attempt to do so all in one go. The most simple way to do so, is by latching onto a peculiar little system function called `pthread_create`. 
+ Sometimes, in order to throw off your efforts, Android apps will create a whole boatload of threads at a very high rate. Faced with random context switches and a generally unstable debugging environment as a result, it is always helpful to create a list of where all threads are initialized, and statically analyse them one at a time rather than attempt to do so all in one go. The most simple way to do so, is by latching onto a peculiar little system function called `pthread_create`. 
 
 ```
 int pthread_create(
