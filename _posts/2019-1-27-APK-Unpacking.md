@@ -70,5 +70,5 @@ apk/source/assets/bin/Data/Managed/Assembly-Sharp.dll
 ...
 
 ```
- From the results, we can immediately see that our application uses native code (.so), Java (.dex), and C Sharp (.dll). While at first glance the amount of files may seem daunting, the steps needed to reverse engineer each are simple and straightforward, and I will go over in detail exactly what needs to be done.
+ From the results, we can immediately see that our application uses native code (.so), Java (.dex), and C Sharp (.dll). While at first glance the amount of files may seem daunting, the steps needed to reverse engineer each are simple and straightforward, and I will make sure to go over in detail exactly what needs to be done.
 
