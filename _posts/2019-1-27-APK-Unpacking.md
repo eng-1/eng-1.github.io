@@ -13,9 +13,9 @@ tags: [Android, APK, OBB, File, Unpacking, Bash]
 
  Now that you have acquired all the necessary files, we can begin the most enjoyable part of reverse engineering. Thankfully, both *APK* and *OBB* files use standard zip compression, meaning it is a trivial matter to click on them, rename the extension to ".zip", and extract. However--doing so is tedious, and is prone to human error due to the large amount of actions you need to perform each time. 
 
- As such, it becomes necessary to automate the process. Having made a personal working directory in my home folder with the Android files in it, I created a few bash scripts to help speed up the process of reverse engineering. Feel free to create your own folder layout, and modify the scripts to suit your preferences:
+ As such, it becomes necessary to automate the process. Having made a personal working directory in my home folder with the application files in it, I wrote a few bash scripts to help speed up the process of reverse engineering. Feel free to design your own folder layout, and modify the scripts to suit your preferences:
 
- Reset folder and delete unpacked files:
+ Reset working directory and create brand new folder structures for revers engineering:
 ```bash
 #!/bin/bash
 set -xe
@@ -29,7 +29,7 @@ mkdir $POS/apk/source
 mkdir $POS/apk/finished
 ```
 
- Copy the *APK* and *OBB* files to the source code folder:
+ Copy the *APK* and *OBB* files from the working directory to the source code folder to be unzipped:
 ```bash
 #!/bin/bash
 set -xe
@@ -38,7 +38,7 @@ cp -f $POS/evil-app.apk $POS/apk/source
 cp -f $POS/evil-app.obb $POS/apk/source
 ```
 
- Fully unpack the *APK* and *OBB*:
+ Fully unpack the *APK* and *OBB* to acquire all application files:
 ```bash
 #!/bin/bash
 set -xe
