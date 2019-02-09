@@ -7,6 +7,9 @@ tags: [Fernflower, Java, Class, Decompile, Bash]
 
  Often times, you will be faced with Java code that you must edit. With `.class` files in particular representing a significant amount of most applications' programming, being able to decompile them can grant you unique knowledge of the inner workings of the system.
   
+<!--more-->
+
+  
  For this task, I used an open-source decompiler called [*Fernflower*.](https://github.com/JetBrains/intellij-community/tree/master/plugins/java-decompiler/engine) Developed by Jetbrains--the creators of the Intellij and CLion IDEs among others--Fernflower offers a simple way to prepare `.class` files for analysis.
 
  The most immediate step is to acquire the needed source code. Since we are only going to be using Fernflower, it is fine to download the entire `intellij-community` repository and delete everything except the `plugins/java-decompiler` folders.
