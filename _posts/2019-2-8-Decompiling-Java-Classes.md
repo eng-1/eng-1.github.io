@@ -20,14 +20,13 @@ tags: [Fernflower, IntelliJ, Java, Class, Decompile, Bash]
  gradle build
  ```
  
- Having ran gradle and acquired an executable, we can now finally use Fernflower to decompile any `.class` files located in the APK.
+ Having acquired an executable, we can now finally use Fernflower to decompile any `.class` files located in the APK.
  
- Here is an example of how to use the new `fernflower.jar` file we just built:
-
+ To run the newly-made binary, simply give it two additional arguments: the folder containing the classes you want to decompile, and the output directory into which the results will be placed. Now, you are free to open the results in any text editor that you wish, and analyze what each Java file does.
+  
 ```bash
 java -jar build/libs/fernflower.jar  <Your_.class_Directory>  <Your_Output_Directory>
 ```
 
- To run the newly-made binary, simply give it two additional arguments: the folder containing the classes you want to decompile, and the output directory into which the results will be placed. Now, you are free to open the results in any text editor that you wish, and analyze what each Java file does.
- 
+
  In the case of Fernflower failing to decompile a `.class` file, it will print out an error message that you will be able to notice. In the future, I will cover a few common anti-decompilation tricks used to fool decompilers like Fernflower, and how to get around them.
