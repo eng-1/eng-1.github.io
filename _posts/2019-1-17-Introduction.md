@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Unpacking Android APK Files
+title: Introduction
 categories: [Programming, Reverse, Engineering]
-tags: [Android, APK, Reverse, Engineering, File]
+tags: [Introduction, Reverse, Engineering]
 ---
 
   Hello there! At some point in your life, you must have downloaded a game and had gone “Wow! There is so much content it has to offer, I can’t even put it in words how fun it would be to play if I only had enough time (and/or money) to grind through the steep difficulty curve.”
